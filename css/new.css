@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --height:450px;
+    --width:450px;
+}
+
+main{
+     background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container{
+    height: var(--height);
+    width: var(--width); 
+    position: relative;
+}
+section{
+min-height: var(--height);
+width: var(--width);
+background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+border: 1px solid linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+border-right:  1px solid linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+border-bottom:  1px solid linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+border-radius: 1rem;
+box-shadow:0 25px  40px rgb(43, 36, 36);
+backdrop-filter: blur(2rem);
+padding: 4rem;
+}
+
+.crcle1, 
+.crcle2{
+background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+height: 175px;
+width: 175px;
+position: absolute; 
+border-radius: 50%;
+}
+
+.crcle1{
+    top: -70px;
+    right: -70px;
+}
+
+.crcle2{
+    bottom: -70px;
+    left: -70px;
+}
+.title{
+    width: 100%;
+}
+.title h1{
+    color: rgba(49, 206, 187, 0.658)(1, 0.658)(1, 0.658);
+    font-weight: 600;
+    font-size:2rem ;
+    opacity: 0.9;
+    margin-bottom: 20px;
+
+}
+form{ 
+    padding: 1px;
+}
+form .input-box{
+    width: 100%;
+    margin-top: 25px;
+}
+form .input-box input {
+    width:  100%;
+    background-color: rgb(225, 201, 201);
+    border: 1px solid rgb(156, 209, 226);
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    color: rgb(70, 33, 33);
+    box-shadow: 0.10px  rgb(14, 13, 13);
+    
+}
+form .input-box input:placeholder {
+color: #43e97b;
+}
+form .input-box input[type="submit"]{
+background-color: rgb(173, 221, 229);
+font-weight: 700;
+color: #621313;
+margin-bottom: 20px;
+cursor: pointer;
+}
+form .link-text{
+    color: #304352;
+    margin-top: 15px;
+    font-size: 0.85rem;
+}
+form .link-text a {
+    text-decoration: none;
+    color: red;
+    font-weight: 700;
+}
